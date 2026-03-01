@@ -1,0 +1,22 @@
+name: finis-client
+services:
+  main:
+    image: node:latest
+    ports:
+      - "80:5173"
+    volumes:
+      - ..:/workspace
+    command:
+      - sleep infinity
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 5
+        delay: 3s
+        window: 120s
+    networks:
+      - finis-network
+networks:
+  finis-network:
+    name: finis-network
+    external: true

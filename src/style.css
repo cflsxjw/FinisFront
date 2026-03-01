@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light-custom --default, dark-custom;
+}
+
+
+@plugin "daisyui/theme" {
+  name: "light-custom";
+  prefersdark: false;
+  color-scheme: light;
+
+  /* 基础：纯净、通透 */
+  /* 这里的逻辑：100 最亮，200 略微下降，300 作为分割线或衬底 */
+  --color-base-100: oklch(100% 0 0);          /* 纯白背景 */
+  --color-base-200: oklch(98% 0.005 250);     /* 极浅灰蓝：用于大面积容器 */
+  --color-base-300: oklch(95% 0.01 250);      /* 浅灰蓝：用于边框、分割线或悬停 */
+  --color-base-content: oklch(20% 0.02 250);  /* 深灰蓝文字 */
+
+  /* 主色：提升明度，增加活泼感 */
+  --color-primary: oklch(65% 0.18 250);
+  --color-primary-content: oklch(100% 0 0);
+
+  --color-secondary: oklch(70% 0.14 210);
+  --color-secondary-content: oklch(100% 0 0);
+
+  --color-accent: oklch(75% 0.15 180);
+  --color-accent-content: oklch(100% 0 0);
+
+  --color-neutral: oklch(40% 0.04 250);
+  --color-neutral-content: oklch(100% 0 0);
+
+  /* 状态色：保持清爽 */
+  --color-info: oklch(75% 0.1 230);
+  --color-info-content: oklch(100% 0 0);
+  --color-success: oklch(75% 0.15 150);
+  --color-success-content: oklch(100% 0 0);
+  --color-warning: oklch(85% 0.15 95);
+  --color-warning-content: oklch(25% 0.05 95);
+  --color-error: oklch(65% 0.2 28);
+  --color-error-content: oklch(100% 0 0);
+
+  /* 边框和间距保持原样 */
+  --radius-selector: 0.5rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+@plugin "daisyui/theme" {
+  name: "dark-custom";
+  prefersdark: true;
+  color-scheme: dark;
+
+  /* 基础：深邃但不死板 */
+  --color-base-100: oklch(22% 0.02 250);      /* 背景 */
+  --color-base-200: oklch(18% 0.02 250);      /* 容器 */
+  --color-base-300: oklch(14% 0.02 250);      /* 更深的卡片 */
+  --color-base-content: oklch(90% 0.01 250);  /* 柔白文字 */
+
+  /* 主色：发光感蓝 */
+  --color-primary: oklch(70% 0.12 250);       /* 提亮并降低饱和 */
+  --color-primary-content: oklch(20% 0.05 250);
+
+  --color-secondary: oklch(75% 0.09 210);
+  --color-secondary-content: oklch(20% 0.05 210);
+
+  --color-accent: oklch(80% 0.1 180);
+  --color-accent-content: oklch(20% 0.05 180);
+
+  --color-neutral: oklch(45% 0.03 250);
+  --color-neutral-content: oklch(95% 0.01 250);
+
+  /* 状态色：针对暗色背景优化 */
+  --color-info: oklch(78% 0.08 230);
+  --color-info-content: oklch(20% 0.05 230);
+  --color-success: oklch(78% 0.1 150);
+  --color-success-content: oklch(20% 0.05 150);
+  --color-warning: oklch(85% 0.1 95);
+  --color-warning-content: oklch(20% 0.05 95);
+  --color-error: oklch(72% 0.12 28);
+  --color-error-content: oklch(20% 0.05 28);
+
+  /* 圆角参数保持一致以维持品牌感 */
+  --radius-selector: 0.5rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+.md-editor-dark {
+  --md-bk-color: var(--color-base-100) !important;
+  --md-color: var(--color-base-content) !important;
+
+  --md-bk-color-outstand: var(--color-base-300) !important;
+}
+
+.md-editor {
+  --md-bk-color: var(--color-base-100) !important;
+  --md-color: var(--color-base-content) !important;
+
+  --md-bk-color-outstand: var(--color-base-300) !important;
+}

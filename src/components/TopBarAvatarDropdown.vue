@@ -1,0 +1,46 @@
+<script setup>
+import {useUserStore} from "../utils/pinia-stores/user.js";
+import {computed} from "vue";
+import {useRouter} from "vue-router";
+
+const router = useRouter();
+const userStore = useUserStore();
+const fullAvatarUrl = computed(() => {
+  return `/api/Resource/avatar/DefaultAvatar.jpeg`;
+});
+function onLoginButtonClick() {
+  router.push("/login");
+}
+const onLogoutButtonClick = () => {
+  userStore.setLogout();
+}
+</script>
+
+<template>
+  <div class="dropdown dropdown-end cursor-pointer" role="button" tabindex="0" v-if="userStore.isLogin">
+    <img class="w-10 rounded-full hover:ring-4 ring-base-100" :src="fullAvatarUrl" alt="Avatar" />
+    <ul class="dropdown-content menu w-44 bg-base-300 rounded-md mt-1 shadow">
+      <li>
+        <div class="flex items-center cursor-pointer gap-2 h-14">
+          <div class="avatar flex">
+            <img class="w-8 rounded-full" :src="fullAvatarUrl" alt="Avatar" />
+          </div>
+          <div>
+            <div class="text-sm">个人主页</div>
+            <div class="text-sm text-base-content/60">{{ userStore.username }}</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center cursor-pointer h-8" @click="onLogoutButtonClick">
+          退出登录
+        </div>
+      </li>
+    </ul>
+  </div>
+  <button @click="onLoginButtonClick" class="btn btn-primary" v-if="!userStore.isLogin">注册 | 登录</button>
+</template>
+
+<style scoped>
+
+</style>
