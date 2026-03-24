@@ -1,0 +1,39 @@
+"filename", "language", "JavaScript", "JSON", "HTML", "Markdown", "JSON with Comments", "YAML", "PostCSS", "vue", "comment", "blank", "total"
+"/workspace/.devcontainer/devcontainer.json", "JSON with Comments", 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 5
+"/workspace/.devcontainer/docker-compose.yml", "YAML", 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 16
+"/workspace/.prettierrc", "JSON", 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 11
+"/workspace/README.md", "Markdown", 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 6
+"/workspace/eslint.config.js", "JavaScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/workspace/index.html", "HTML", 0, 0, 13, 0, 0, 0, 0, 0, 0, 1, 14
+"/workspace/package-lock.json", "JSON", 0, 4965, 0, 0, 0, 0, 0, 0, 0, 1, 4966
+"/workspace/package.json", "JSON", 0, 38, 0, 0, 0, 0, 0, 0, 0, 1, 39
+"/workspace/src/App.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 7, 0, 4, 11
+"/workspace/src/components/AiChatBox.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 204, 0, 12, 216
+"/workspace/src/components/ArticleCard.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 93, 0, 4, 97
+"/workspace/src/components/BaseCommentBox.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 161, 0, 5, 166
+"/workspace/src/components/FinisNotification/FinisNotification.js", "JavaScript", 22, 0, 0, 0, 0, 0, 0, 0, 6, 2, 30
+"/workspace/src/components/FinisNotification/FinisNotification.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 67, 0, 5, 72
+"/workspace/src/components/RootCommentBox.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 24, 0, 3, 27
+"/workspace/src/components/ThemeButton.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 59, 0, 5, 64
+"/workspace/src/components/TopBarAvatarDropdown.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 44, 0, 4, 48
+"/workspace/src/constants.js", "JavaScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"/workspace/src/main.js", "JavaScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 5, 25
+"/workspace/src/router/router.js", "JavaScript", 66, 0, 0, 0, 0, 0, 0, 0, 0, 4, 70
+"/workspace/src/style.css", "PostCSS", 0, 0, 0, 0, 0, 0, 88, 0, 9, 21, 118
+"/workspace/src/utils/axios.js", "JavaScript", 45, 0, 0, 0, 0, 0, 0, 0, 1, 4, 50
+"/workspace/src/utils/converters.js", "JavaScript", 16, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17
+"/workspace/src/utils/pinia-stores/user.js", "JavaScript", 26, 0, 0, 0, 0, 0, 0, 0, 8, 5, 39
+"/workspace/src/views/layouts/MainLayout.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 28, 0, 4, 32
+"/workspace/src/views/pages/AboutFinis.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 14, 0, 6, 20
+"/workspace/src/views/pages/ArticleEditor.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 232, 0, 10, 242
+"/workspace/src/views/pages/ArticlePage.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 355, 0, 6, 361
+"/workspace/src/views/pages/HomePage.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 68, 0, 5, 73
+"/workspace/src/views/pages/LoginPage.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 183, 0, 10, 193
+"/workspace/src/views/pages/ModifyPersonalData.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 197, 0, 4, 201
+"/workspace/src/views/pages/NotFound.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 29, 0, 9, 38
+"/workspace/src/views/pages/PersonalPage.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 108, 0, 5, 113
+"/workspace/src/views/pages/RagPage.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 8, 0, 2, 10
+"/workspace/src/views/pages/Register.vue", "vue", 0, 0, 0, 0, 0, 0, 0, 94, 0, 8, 102
+"/workspace/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 16
+"/workspace/vite.config.js", "JavaScript", 14, 0, 0, 0, 0, 0, 0, 0, 1, 2, 17
+"Total", "-", 221, 5014, 13, 3, 21, 16, 88, 1975, 25, 163, 7539

@@ -8,12 +8,6 @@ services:
       - ..:/workspace
     command:
       - sleep infinity
-    deploy:
-      restart_policy:
-        condition: on-failure
-        max_attempts: 5
-        delay: 3s
-        window: 120s
     networks:
       - finis-network
 networks:

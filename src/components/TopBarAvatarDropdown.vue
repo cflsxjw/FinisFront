@@ -2,16 +2,18 @@
 import {useUserStore} from "../utils/pinia-stores/user.js";
 import {computed} from "vue";
 import {useRouter} from "vue-router";
+import axiosServer from "../utils/axios.js";
 
 const router = useRouter();
 const userStore = useUserStore();
 const fullAvatarUrl = computed(() => {
-  return `/api/Resource/avatar/DefaultAvatar.jpeg`;
+  return `/api/Resource/avatar/${userStore.userid}`;
 });
 function onLoginButtonClick() {
   router.push("/login");
 }
 const onLogoutButtonClick = () => {
+  axiosServer.post("/user/logout");
   userStore.setLogout();
 }
 </script>
@@ -19,9 +21,9 @@ const onLogoutButtonClick = () => {
 <template>
   <div class="dropdown dropdown-end cursor-pointer" role="button" tabindex="0" v-if="userStore.isLogin">
     <img class="w-10 rounded-full hover:ring-4 ring-base-100" :src="fullAvatarUrl" alt="Avatar" />
-    <ul class="dropdown-content menu w-44 bg-base-300 rounded-md mt-1 shadow">
+    <ul class="dropdown-content menu w-44 bg-base-100 border-2 border-base-200 rounded-md shadow-lg mt-4">
       <li>
-        <div class="flex items-center cursor-pointer gap-2 h-14">
+        <div class="flex items-center cursor-pointer gap-2 h-14" @click="router.push(`/space/${userStore.userid}`)">
           <div class="avatar flex">
             <img class="w-8 rounded-full" :src="fullAvatarUrl" alt="Avatar" />
           </div>

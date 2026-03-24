@@ -1,3 +1,8 @@
 {
-  "recommendations": ["Vue.volar"]
+  "recommendations": [
+    "Vue.volar", // Vue 官方
+    "ms-vscode-remote.remote-containers", // dev-container
+    "esbenp.prettier-vscode", // Prettier 
+    "bradlc.vscode-tailwindcss", // Tailwind
+  ]
 }
